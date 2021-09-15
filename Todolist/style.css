@@ -38,7 +38,7 @@ h1 {
 
 .clear {
     width: 10%;
-    background-color: #ffd89b;
+    background-color: powderblue;
 }
 
 ul {
@@ -84,6 +84,7 @@ button {
     border-radius: 50px;
     border: 1px solid #111;
     margin-right: 5px;
+    background-color: #E9967A;
 }
 
 .buttons {
@@ -142,7 +143,7 @@ li>i {
 
 @media (max-width: 700px) {
     button {
-        width: 50%;
+        width: 35%;
         height: 30px;
         font-size: 1em;
     }
@@ -155,7 +156,7 @@ li>i {
         width: 20%;
     }
     .copy {
-        bottom: -180px;
+        bottom: -150px;
         right: 10px;
     }
     #input-text {
