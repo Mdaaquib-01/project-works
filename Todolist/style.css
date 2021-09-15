@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #ffd89b, #19547b);
+    font-family: 'Hind Siliguri', sans-serif;
+    animation: colors 5s linear infinite backwards;
+}
+
+@keyframes colors {
+    0% {
+        background: linear-gradient(90deg, #ffd89b, #19547b);
+    }
+    25% {
+        background: linear-gradient(90deg, #948e99, #2e1437)
+    }
+    50% {
+        background: linear-gradient(90deg, #fc00ff, #00dbde);
+    }
+    100% {
+        background: linear-gradient(90deg, #f1f2b5, #135058);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.clearbtn {
+    width: 100%;
+    text-align: center;
+}
+
+.clear {
+    width: 10%;
+    background-color: #ffd89b;
+}
+
+ul {
+    list-style: none;
+    margin: 20px;
+    padding: 25px 50px;
+    border: 2px solid wheat;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    width: 600px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 10px;
+    width: 500px;
+    margin-top: 5px;
+    font-size: 1.5em;
+    height: 50px;
+    background-color: burlywood;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.copy {
+    text-align: end;
+    position: relative;
+    right: 50px;
+    bottom: -25px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #111111;
+}
+
+button {
+    width: 15%;
+    font-size: 1.5em;
+    margin-top: 4px;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #111;
+    margin-right: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-text {
+    transform: translate(40vw);
+    width: 20%;
+    height: 40px;
+    margin: 5px 0 5px 0;
+    font-size: 1em;
+    border-radius: 20px;
+    text-align: center;
+    border: solid 1px pink;
+    outline: none;
+}
+
+.itemlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    float: right;
+    cursor: pointer;
+}
+
+.fas:hover {
+    background-color: rgb(1, 1, 1, 0.4);
+    box-shadow: 0 0 10px rgb(1, 10, 120, 0.4);
+    border-radius: 50%;
+}
+
+li>i {
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: #111111;
+    float: right;
+}
+
+.delete {
+    display: none;
+}
+
+.strike {
+    text-decoration: line-through;
+    background-color: coral;
+    color: brown;
+    font-weight: 500;
+}
+
+@media (max-width: 700px) {
+    button {
+        width: 30%;
+        height: 30px;
+        font-size: 1em;
+    }
+    ul {
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .clear {
+        width: 20%;
+    }
+    .copy {
+        bottom: -100px;
+        right: 10px;
+    }
+    #input-text {
+        width: 50%;
+        transform: translate(25vw);
+    }
+    li {
+        width: 350px;
+    }
+}
