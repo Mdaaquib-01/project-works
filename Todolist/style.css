@@ -142,7 +142,7 @@ li>i {
 
 @media (max-width: 700px) {
     button {
-        width: 33%;
+        width: 35%;
         height: 30px;
         font-size: 1em;
     }
@@ -155,7 +155,7 @@ li>i {
         width: 20%;
     }
     .copy {
-        bottom: -100px;
+        bottom: -150px;
         right: 10px;
     }
     #input-text {
