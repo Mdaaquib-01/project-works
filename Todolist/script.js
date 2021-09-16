@@ -50,7 +50,6 @@ btnupdate.addEventListener('click', function() {
 
         var firstElement = addlist.firstElementChild;
         var newlist = createnewnode();
-        addlist.contentEditable = true;
         addlist.replaceChild(newlist, firstElement);
         inputText.value = '';
     } else {
