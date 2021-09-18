@@ -195,6 +195,7 @@ h2{
         transform: translate(40px);
         margin: 0;
         overflow-x: hidden;
+        float: none;
         height: 60vh;
         transition: .5s;
     }
