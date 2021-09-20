@@ -1,7 +1,6 @@
 var addlist = document.getElementById('todo-list');
 var btnadd = document.getElementById('add-item');
 var inputText = document.getElementById('input-text');
-var btnupdate = document.getElementById('update-item');
 var clearbtn = document.querySelector('.clear');
 
 inputText.addEventListener('keyup', function(e) {
@@ -45,17 +44,6 @@ function addlistitem() {
 };
 btnadd.addEventListener('click', addlistitem);
 
-btnupdate.addEventListener('click', function() {
-    if (inputText.value !== undefined && inputText.value !== null && inputText.value !== '') {
-
-        var firstElement = addlist.firstElementChild;
-        var newlist = createnewnode();
-        addlist.replaceChild(newlist, firstElement);
-        inputText.value = '';
-    } else {
-        alert('Enter a valid input');
-    }
-})
 clearbtn.addEventListener('click', function() {
     addlist.innerHTML = '';
 })
