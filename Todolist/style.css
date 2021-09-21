@@ -4,13 +4,11 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background: linear-gradient(90deg, #ffd89b, #19547b);
     font-family: 'Hind Siliguri', sans-serif;
     animation: colors 5s linear infinite backwards;
 }
-
 @keyframes colors {
     0% {
         background: linear-gradient(90deg, #ffd89b, #19547b);
@@ -25,22 +23,18 @@ body {
         background: linear-gradient(90deg, #f1f2b5, #135058);
     }
 }
-
 h1 {
     text-align: center;
     margin: 20px;
 }
-
 .clearbtn {
     width: 100%;
     text-align: center;
 }
-
 .clear {
     width: 10%;
     background-color: powderblue;
 }
-
 ul {
     list-style: none;
     margin: 20px;
@@ -53,7 +47,6 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
 li {
     padding: 7px;
     width: 500px;
@@ -94,7 +87,7 @@ button {
     align-items: center;
 }
 
-#input-text {
+#input-text{
     transform: translate(40vw);
     width: 20%;
     height: 40px;
@@ -105,25 +98,29 @@ button {
     border: solid 1px pink;
     outline: none;
 }
-
 .itemlist {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fas {
+.fas,.far {
     float: right;
-    margin: 3px;
+    padding: 5px;
     cursor: pointer;
 }
 
-.fas:hover {
-    background-color: rgb(1, 1, 1, 0.4);
-    box-shadow: 0 0 10px rgb(1, 10, 120, 0.4);
+.fas:hover, .far:hover {
+    background-color: rgb(1, 1, 1, 0.3);
+    box-shadow: 0 0 10px rgba(121, 132, 247, 0.4);
     border-radius: 50%;
 }
-
+.fa-plus-circle{
+    float: none;
+    transform: translate(40vw,7px);
+    font-size: 2em;
+    color: whitesmoke;
+}
 li>i {
     font-size: 1em;
     background: none;
@@ -133,16 +130,18 @@ li>i {
 }
 
 .delete {
-    display: none;
+    transform: translateY(95px) rotateZ(45deg);
+    opacity: 0;
+    transition: .5s;
 }
-
 .strike {
     text-decoration: line-through;
     background-color: coral;
     color: brown;
     font-weight: 500;
-    opacity: 0.6;
+    transition: .5s;
 }
+
 
 @media (max-width: 700px) {
     button {
