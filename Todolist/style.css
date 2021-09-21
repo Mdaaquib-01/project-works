@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-body {
+body{
     background: linear-gradient(90deg, #ffd89b, #19547b);
     font-family: 'Hind Siliguri', sans-serif;
     animation: colors 5s linear infinite backwards;
