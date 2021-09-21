@@ -164,6 +164,12 @@ li>i {
         width: 50%;
         transform: translate(25vw);
     }
+    .fa-plus-circle{
+        float: none;
+        transform: translate(25vw,7px);
+        font-size: 2em;
+        color: whitesmoke;   
+    }
     li {
         width: 350px;
     }
