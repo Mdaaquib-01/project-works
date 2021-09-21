@@ -1,5 +1,5 @@
 var addlist = document.getElementById('todo-list');
-var btnadd = document.getElementById('add-item');
+var btnadd = document.querySelector('.fa-plus-circle');
 var inputText = document.getElementById('input-text');
 var clearbtn = document.querySelector('.clear');
 
@@ -8,7 +8,6 @@ inputText.addEventListener('keyup', function(e) {
         addlistitem();
     }
 })
-
 function createnewnode() {
     var newlist = document.createElement('li');
     var textnode = document.createTextNode(inputText.value);
@@ -16,14 +15,20 @@ function createnewnode() {
     newlist.id = "item" + (addlist.childElementCount + 1);
 
     var dbtn = document.createElement('i');
-    var deltext = document.createTextNode("");
-    dbtn.classList.add('fas', 'fa-trash')
-    dbtn.appendChild(deltext);
+    dbtn.classList.add('fas', 'fa-trash');
     newlist.appendChild(dbtn);
+
+    var ckeck = document.createElement('i');
+    ckeck.classList.add('far','fa-check-circle');
+    newlist.appendChild(ckeck);
+
     dbtn.addEventListener('click', function() {
         newlist.classList.add('delete');
+        newlist.addEventListener('transitionend',function(){
+            newlist.remove();
+        })
     })
-    newlist.addEventListener('click', function() {
+    ckeck.addEventListener('click', function() {
         newlist.classList.toggle('strike');
     })
     return newlist;
