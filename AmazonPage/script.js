@@ -6,19 +6,24 @@ var color4=document.querySelector('.color4');
 var color5=document.querySelector('.color5');
 
 color1.addEventListener('click', function(){
-    watch.style.backgroundImage = "url('/img/blue.png')" 
+    watch.classList.add('watch');
+    watch.classList.remove('pink','black','red','purple')
 })
 color2.addEventListener('click', function(){
-   watch.style.backgroundImage = "url('/img/pink.png')" 
+    watch.classList.add('pink');
+    watch.classList.remove('watch','black','red','purple')
 })
 color3.addEventListener('click', function(){
-    watch.style.backgroundImage = "url('/img/black.png')" 
+    watch.classList.add('black');
+    watch.classList.remove('pink','watch','red','purple')
 })
 color4.addEventListener('click', function(){
-    watch.style.backgroundImage = "url('/img/red.png')" 
+    watch.classList.add('red');
+    watch.classList.remove('pink','black','watch','purple')
 })
 color5.addEventListener('click', function(){
-    watch.style.backgroundImage = "url('/img/purple.png')" 
+    watch.classList.add('purple');
+    watch.classList.remove('pink','black','red','watch')
 });
 setInterval(showTime, 1000);
 function showTime() {
