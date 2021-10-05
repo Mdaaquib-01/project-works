@@ -6,27 +6,19 @@ var color4=document.querySelector('.color4');
 var color5=document.querySelector('.color5');
 
 color1.addEventListener('click', function(){
-    watch.classList.add('watch');
-    watch.classList.remove('pink','black','red','purple','pink');
+    watch.style.backgroundImage = "url('/img/blue.png')" 
 })
 color2.addEventListener('click', function(){
-    watch.classList.remove('blue','black','red','purple','watch');
-    watch.classList.add('pink')
+   watch.style.backgroundImage = "url('/img/pink.png')" 
 })
 color3.addEventListener('click', function(){
-    watch.classList.add('black')
-    watch.classList.remove('blue','pink','red','purple','watch');
-
+    watch.style.backgroundImage = "url('/img/black.png')" 
 })
 color4.addEventListener('click', function(){
-    watch.classList.add('red');
-    watch.classList.remove('blue','black','pink','purple','watch');
-
+    watch.style.backgroundImage = "url('/img/red.png')" 
 })
 color5.addEventListener('click', function(){
-    watch.classList.add('purple')
-    watch.classList.remove('blue','black','red','pink','watch');
-
+    watch.style.backgroundImage = "url('/img/purple.png')" 
 });
 setInterval(showTime, 1000);
 function showTime() {
@@ -56,12 +48,10 @@ function showTime() {
             .innerHTML = currentTime;
 }
 showTime();
-
 var clockshow = document.querySelector('.clocktime');
 var timebtn = document.getElementById('time');
 var heartbtn = document.getElementById('heart');
 var heartshow = document.querySelector('.heart')
-
 heartbtn.addEventListener('click',function(){
     if(clockshow.classList.contains('clocktime')){
         clockshow.classList.remove('clocktime')
