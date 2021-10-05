@@ -136,7 +136,7 @@ h2{
    body{
        transition: 2s;
    }
-    .watch,.pink,.black,.red,.purple{
+    .watch{
         transform: translate(40px);
         background-position: center;
         margin: 0;
