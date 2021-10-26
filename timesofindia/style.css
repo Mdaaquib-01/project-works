@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     scroll-behavior: smooth;
+     transition: 0.5s ease all;
+     overflow-x: hidden;
+}
+
+.navfirst{
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: white;
+    height: 30px;
+}
+.navfirst span{
+    cursor: pointer;
+}
+.icons{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: white;
+    margin-top: 4px;
+}
+.bx{
+    padding: 1px;
+    background-color: white;
+    color: rgb(1, 1,1,0.5);
+    border-radius: 50%;
+}
+.bx:hover{
+    color: #000;
+}
+.main-heading{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+.mainhead{
+    background-color: #000;
+    height: 80px;
+}
+.heading-next{
+    background-color: #be2819;
+    color: white;
+    font-size: 17px;
+}
+
+.heading-next>i{
+    position: relative;
+    left: 100px;
+}
+
+.heading-next>span{
+    position: relative;
+    left: 100px;
+    font-weight: bold;
+    transition: .6s;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+}
+
+.heading-next>span:hover{
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+.latest{
+    background-color: white;
+    color: #000;
+}
+.bx-home{
+    padding: 0;
+    background-color: #be2819;
+    color: white;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+.bx-search-alt-2{
+    padding: 0;
+    background-color: #be2819;
+    color: white;
+    transform: translate(400px,1px);
+    cursor: pointer;
+}
+.wrapper{
+    position: relative;
+    margin-left: 100px;
+    max-width: 1000px;
+}
+.leftsec{
+    width: 650px;
+    float: left;
+    margin-top: 5px;
+}
+.image{
+float: left;
+}
+h4{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rightsec{
+transform: translate(70px,-10px); 
+}
+.rightsec span{
+    padding: 0 20px 10px 0;
+    background-color:#bababa;
+    text-align: center;
+    cursor: pointer;
+}
+.rightsec span:hover{
+    background-color: #000;
+    color: white;
+}
+.national{
+    margin-top: 15px;
+}
+.national>p{
+    margin: 10px;
+}
+.story:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #111;
+    width: 8%;
+    margin: 5px;
+}
+.story:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #111;
+    width: 8%;
+    margin: 5px;
+    right: 26%;
+}
+.imgs{
+    margin-top: 5px;
+}
+.right1{
+    display: flex;
+    margin: 7px;
+}
+.red{
+    height: 2px;
+    background-color: red;
+    transform: translateY(50px);
+}
+#footer{
+    background-color: #111;
+    transform: translateY(50px);
+    font-family: 'Poppins', sans-serif;
+        color: white;
+    display: grid;
+    grid-template-columns: repeat(2,700px);
+    height: 630px;
+}
+.footerleft{
+    padding: 10px 0 0 50px;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+.listitems{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    margin-top: 10px;
+}
+.listitems a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: .9em;
+}
+.footertitle{
+    font-size: 1.1em;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.footerright .footertitle{
+    font-size: .7em;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.rightlist{
+    font-size: .7em;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.rightlist a{
+    margin-top: 5px;
+}
+.footertitler8{
+    font-size: .78em;
+    margin-top: 25px;
+}
+.footerleft p:after,.footerright p:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    width: 30%;
+    margin: 5px;
+    } 
+    .footerleft p::before,.footerright p::before{
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: #242424;
+        width: 1%;
+        margin: 5px;
+        transform: translate(-20px);
+        } 
+
+        .listitems a:hover{
+          opacity: .5;
+          transition: .2s;
+        }
+        .footerleft p::before,.footerright p::before{
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: #242424;
+            width: 1%;
+            margin: 5px;
+            transform: translate(-20px);
+            } 
+            .wrapper h1:after{
+                position: absolute;
+                content: "";
+                height: 2px;
+                background-color: #242424;
+                width: 105%;
+                margin: 5px;
+                top: 35px;
+                left: -4px;
+            }
+.copy{
+    font-size: 12px;
+    line-height: 1.4;
+    color: #ccc;
+    text-align: center;
+    transform: translate(10px, 15px);
+}
+.copy a{
+    color: #666;
+    text-decoration: none;
+}
