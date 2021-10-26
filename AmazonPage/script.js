@@ -7,26 +7,23 @@ var color5=document.querySelector('.color5');
 
 color1.addEventListener('click', function(){
     watch.classList.add('watch');
-    watch.classList.remove('pink','black','red','purple','pink');
+    watch.classList.remove('pink','black','red','purple')
 })
 color2.addEventListener('click', function(){
-    watch.classList.remove('blue','black','red','purple','watch');
-    watch.classList.add('pink')
+    watch.classList.add('pink');
+    watch.classList.remove('watch','black','red','purple')
 })
 color3.addEventListener('click', function(){
-    watch.classList.add('black')
-    watch.classList.remove('blue','pink','red','purple','watch');
-
+    watch.classList.add('black');
+    watch.classList.remove('pink','watch','red','purple')
 })
 color4.addEventListener('click', function(){
     watch.classList.add('red');
-    watch.classList.remove('blue','black','pink','purple','watch');
-
+    watch.classList.remove('pink','black','watch','purple')
 })
 color5.addEventListener('click', function(){
-    watch.classList.add('purple')
-    watch.classList.remove('blue','black','red','pink','watch');
-
+    watch.classList.add('purple');
+    watch.classList.remove('pink','black','red','watch')
 });
 setInterval(showTime, 1000);
 function showTime() {
@@ -56,12 +53,10 @@ function showTime() {
             .innerHTML = currentTime;
 }
 showTime();
-
 var clockshow = document.querySelector('.clocktime');
 var timebtn = document.getElementById('time');
 var heartbtn = document.getElementById('heart');
 var heartshow = document.querySelector('.heart')
-
 heartbtn.addEventListener('click',function(){
     if(clockshow.classList.contains('clocktime')){
         clockshow.classList.remove('clocktime')
