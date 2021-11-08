@@ -6,8 +6,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 65vh;
     flex-wrap: wrap;
+}
+h1,h3{
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px #878;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    box-shadow: 2px 2px 2px 2px rgb(1,1,1,0.4);
 }
 h2, h5{
     color: white;
@@ -23,7 +31,7 @@ h5{
     text-align: center;
     margin-right: 20px;
     border: solid 1px black;
-    box-shadow: 0 0 20px  black inset;
+    box-shadow:  0 0 10px rgb(111,111,111);
     transition: 0.2s;
 }
 .add{
@@ -35,9 +43,10 @@ h5{
     background-color: yellowgreen;
     box-shadow: 0 0 20px  black inset;
     border-radius: 10px;
+    scale: 1.1;
     transition: 0.4s;
     animation-name: box;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 @keyframes box {
     0%{

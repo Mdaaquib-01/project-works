@@ -1,6 +1,6 @@
 //var changer= document.getElementById('element');
     
-document.body.addEventListener('keydown', function(e){
+/*document.body.addEventListener('keydown', function(e){
     var keyinfo = e.keyCode;
     if(keyinfo===65){
         document.getElementById('element1').classList.add('add');
@@ -74,4 +74,20 @@ document.body.addEventListener('keydown', function(e){
         const music = new Audio(src='assests/tink.wav');
          music.play();
     } 
+})*/
+
+window.addEventListener('keydown',(e)=>{
+   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+   if(!audio)return;
+   key.classList.add('add')
+   audio.currentTime=0;
+   audio.play()
+   console.log(key)
+   const keys = Array.from(document.querySelectorAll('#element')) 
+   keys.forEach(key=>{
+       key.addEventListener('transitionend',()=>{
+        key.classList.remove('add')
+       })
+   })
 })
