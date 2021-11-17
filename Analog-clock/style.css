@@ -1,0 +1,119 @@
+*{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    background: linear-gradient(225deg, #988080, #b59898);
+    font-family: 'helvetica neue';
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.3em;
+    transition: 1s ease;
+  }
+
+  .clock {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 1.5rem;
+box-shadow:  -27px 27px 53px #897373,
+           27px -27px 53px #c9a9a9;
+           transition: 1s ease;
+
+  }
+  .clock.dark{
+    box-shadow:  6px 6px 12px #2a2626,
+    -6px -6px 12px #2c2828;
+  }
+.bxs-moon,.bx-sun{
+position: absolute;
+top: 35px;
+right: 35px;
+font-size: 1.5em;
+padding: 5px;
+cursor: pointer;
+}
+.bx-sun{
+    color: #fff;
+display: none;
+}
+.bx-sun.active{
+    display: block;
+}
+.bxs-moon.none{
+    display: none;
+}
+
+body.dark-mode{
+background: #2b2727;
+}
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+  .clock-face .number{
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-weight: bold;
+  }
+  .number.color{
+      color: #a19191;
+  }
+  .clock-face .number1{ --rotation: 30deg;}
+  .clock-face .number2{ --rotation: 60deg;}
+  .clock-face .number3{ --rotation: 90deg;}
+  .clock-face .number4{ --rotation: 120deg;}
+  .clock-face .number5{ --rotation: 150deg;}
+  .clock-face .number6{ --rotation: 180deg;}
+  .clock-face .number7{ --rotation: 210deg;}
+  .clock-face .number8{ --rotation: 240deg;}
+  .clock-face .number9{ --rotation: 270deg;}
+  .clock-face .number10{ --rotation: 300deg;}
+  .clock-face .number11{ --rotation: 330deg;}
+
+  .hand {
+    width: 40%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    border-radius: 50px;
+  }
+  .second-hand{
+    height: 3px;
+    width: 43%;
+    background: red; 
+  }
+  .min-hand{
+    height: 4px;
+  }
+  .clock-face::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #bdbdcb;
+    z-index: 10;
+  }
+
