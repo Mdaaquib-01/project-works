@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/clear.jpg) no-repeat center;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.weathermain{
+    width: 350px;
+    height: 420px;
+    backdrop-filter: blur(13px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    text-align: center;
+}
+input[type=text]{
+    border-radius: 50px;
+    margin: 15px 5px 0 0;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border: none;
+    background: rgba(255,255,255, 0.4);
+    font-weight: bold;
+}
+input::placeholder{
+    color: #222;
+    font-size: 1em;
+}
+input[type=text]:focus{
+    border: 1px solid #111;
+    outline: none;
+}
+.fa-search{
+    padding: 7px;
+    cursor: pointer;
+    background-color: #999;
+    border-radius: 50%;
+    font-size: .9em;
+}
+.weathermain #city{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #d9dad7;
+}
+.weathermain .temp{
+    font-size: 5em;
+    color: #faf5e4;
+}
+.weathermain .info{
+    margin: 5px 0 50px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: bisque;
+}
+.himidinfo{
+    text-align: start;
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+    color: #a8e6cf;
+}
