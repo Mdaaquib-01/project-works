@@ -22,31 +22,29 @@ let Weatherdata =()=>{ fetch(`https://api.openweathermap.org/data/2.5/weather?q=
 
             if(id>=200&&id<=232){
                 //Thunderstorm
-               main.style.backgroundImage = `url(images/thunder.jpg)`
+               main.style.background = `url(images/thunder.jpg) no-repeat center`
             }
             else if(id>=300&&id<=321){
                 //drizzle
-                main.style.backgroundImage = `url(images/drizzle.jpg)`
+                main.style.background = `url(images/drizzle.jpg) no-repeat center`
             }
             else if(id>=500&&id<=531){
                 //Rain
-                main.style.backgroundImage = `url(images/rain.jpg)`
+                main.style.background = `url(images/rain.jpg) no-repeat center`
             }
             else if(id>=600&&id<=622){
                 //Snow
-                main.style.backgroundImage = `url(images/snow.jpg)`
+                main.style.background = `url(images/snow.jpg) no-repeat center`
             }
             else if(id>=701&&id<=781){
                 //Atmosphere
-                main.style.backgroundImage = `url(images/atmosphere.jpg)`
+                main.style.background = `url(images/atmosphere.jpg) no-repeat bottom`
             } 
-            else(id>=800&&id<=804)
+            else if(id>=800&&id<=804)
             {
                 //Clouds
-                main.style.backgroundImage = `url(images/clouds.jpg)`
-                if(data.main.temp<0){
-                    main.style.backgroundImage = `url(images/snow.jpg)`
-                }
+                main.style.background = `url(images/clouds.jpg) no-repeat center`
+                
             }
             console.log(id)
             inputText.value=''
