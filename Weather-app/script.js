@@ -44,10 +44,11 @@ let Weatherdata =()=>{ fetch(`https://api.openweathermap.org/data/2.5/weather?q=
             {
                 //Clouds
                 main.style.background = `url(images/clouds.jpg) no-repeat center`
-            }
-if(data.main.temp<0){
-                main.style.background = `url(images/snow.jpg) no-repeat center`
+                if(data.main.temp<0){
+                main.style.background = `url(images/snow.jpg) no-repeat center`;
                    }
+            }
+
             console.log(id)
             inputText.value=''
             }).catch(()=>{
