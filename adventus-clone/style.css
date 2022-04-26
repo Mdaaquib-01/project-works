@@ -1,0 +1,151 @@
+body {
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #19AD4A;
+  width: 100%;
+  position: fixed !important;
+  z-index: 100;
+}
+
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.contact {
+  margin-top: 2px;
+  margin-bottom: 100px;
+  height: 300px;
+  background-color: #19AD4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h1 {
+  position: absolute;
+  margin-left: 100px;
+  color: #FFFFFF;
+  font-family: "DM Sans", DM Sans;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.contact .line {
+  border-left: 1px solid white;
+  height: 43px;
+  position: absolute;
+  left: 34px;
+}
+
+.contact .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contact .btns button {
+  color: grey;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 0;
+  background-color: #F5F5F5;
+}
+
+form {
+  padding: 50px;
+  background-color: white;
+}
+
+form input, form select, form textarea {
+  background-color: #f5f5f5 !important;
+}
+
+.subbtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.office {
+  background-color: #293b4a;
+  height: 700px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.office .container {
+  text-align: center;
+}
+
+.office .container h1 {
+  color: white;
+  text-align: start;
+}
+
+.office .container .country {
+  color: white;
+  border: 1px solid white;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.office .container .country:hover {
+  color: green;
+  border: 1px solid green;
+}
+
+.office .container iframe {
+  position: relative;
+  top: 100px;
+  left: -60px;
+}
+
+.footer-menu-col {
+  margin-left: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[4];
+      grid-template-columns: repeat(4, 350px);
+  color: black;
+}
+
+.footer-menu-col a {
+  color: black;
+  text-decoration: none;
+}
+
+.noactive {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#career {
+  background-color: #293b4a;
+}
+/*# sourceMappingURL=style.css.map */
