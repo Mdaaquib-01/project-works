@@ -1,0 +1,56 @@
+:root{
+    --bgColr: #F6F2FF;
+    --texttop: #240D57;
+    --snap: #E87BF8;
+    --textColr:#828282;
+
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EDE5FF;
+}
+.toptext .firstText,.bottom{
+    color: var(--texttop);
+}
+.toptext .middle{
+    color: var(--snap);
+}
+.toptext h1{
+    font-size: 50px;
+}
+.bottomnav p{
+    font-size: 20px;
+    margin: 10px;
+}
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+background: #fff;
+filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+border-radius: 13.2326px;
+}
+.booking img{
+    width: 280px;
+}
+@media only screen and (max-width: 600px) {
+    .topnav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 40vh;
+        text-align: center;
+    }
+    .bottomnav{
+        width: 350px;
+    }
+}
